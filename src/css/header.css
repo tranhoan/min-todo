@@ -1,0 +1,76 @@
+body {
+    background:#343d46;
+    font-family: "Texta", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    max-width: 640px;
+    margin: 50px auto;
+}
+
+nav {
+    max-width: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    width: 25%;
+    text-align: center;
+    font-family: "Texta", "Avenir Next", "Avenir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    border: 1px dashed rgba(255,255,255, 0);
+    color: #fff;
+    padding: 10px 0 10px 0;
+    margin: -1px -1px -1px -1px;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+nav ul li:hover {
+    background: rgba(176, 194, 255, 0.1);
+}
+
+nav ul {
+    border: 1px solid #fff;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    z-index: 100;
+}
+
+nav ul li:hover {
+    background: rgba(255,255,255,.1);
+}
+
+nav ul {
+    border: 1px solid #fff;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    z-index: 100;
+}
+nav div {
+    position: absolute;
+    left: 0;
+    top: 16px;
+    background: #fff;
+    width: 25.2%;
+    height: 40px;
+    z-index:99;
+    transition: margin-left 500ms ease
+}
+
+.active {
+    color: black;
+}
+@media screen and (max-width: 640px) {
+    .wrapper{
+        max-width: 100%;
+        font-size: 0.9em;
+    }
+    nav div{
+        width: 25.5%;
+        height: 2.5em;
+    }
+}

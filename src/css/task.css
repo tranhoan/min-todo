@@ -1,0 +1,73 @@
+.containerTask {
+    max-width: 640px;
+    font-size: 23px;
+    margin: 0 auto;
+}
+li.placeholder {background: rgb(255,240,120);}
+li.placeholder:before {
+    content: "Drop here";
+    color: rgb(225,210,90);
+}
+.title{
+    padding-bottom: 8px;
+}
+.textTask{
+}
+.deleteIcon{
+    transition: color .2s ease
+}
+.doneIcon{
+    padding-right: 8px;
+    transition: color .3s ease
+}
+.doneIcon:hover, .deleteIcon:hover{
+    color: #343d46;
+}
+.card {
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0);
+    color: #f5f5f5;
+    box-shadow: none;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.waves-effect {
+    width: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    margin-bottom: 20px;
+}
+
+.list-divider {
+    border: 0;
+    height: 1px;
+    overflow: hidden;
+    background-color: #e0e0e0;
+    margin-left: 0px;
+}
+
+.list {
+    margin: 0;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+.list li {
+    list-style: none;
+}
+
+.list li .valign-wrapper {
+    min-height: 40px;
+
+}
+@media screen and (max-width: 640px) {
+    .containerTask{
+        max-width: 100%;
+        font-size: 1em;
+    }
+}
